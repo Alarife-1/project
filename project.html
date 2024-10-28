@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>متجر الإناقة</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <h1>مرحبا بكم في متجرنا الإلكتروني</h1>
+        <a href="cart.html" class="btn">انتقل إلى السلة</a>
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <img src="img/sho1.jpg" alt="لابتوب">
+            <h2>لابتوب</h2>
+            <p>سعر:1000ريال</p>
+            
+            <button class="btn" onclick="addToCart(' لابتوب',1000)">أضف إلى السلة</button>
+        </div>
+        <div class="product">
+            <img src="img/sho2.jpg" alt="طقم ملابس">
+            <h2>طقم ملابس</h2>
+            <p>سعر: 150 ريال</p>
+            <button class="btn" onclick="addToCart('منتج 2', 150)">أضف إلى السلة</button>
+        </div>
+        <div class="product">
+            <img src="img/sho3.jpg" alt="منتج 3">
+            <h2>قماش </h2>
+            <p>سعر: 200 ريال</p>
+            <button class="btn" onclick="addToCart('منتج 3', 200)">أضف إلى السلة</button>
+        </div>
+    </div>
+
+    <script src="project.js"></script>
+<script>
+    displaycart();
+</script>
+</body>
+</html>

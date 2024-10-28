@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة المشتريات</title>
+    <a href="project.html" class="btn">العودة إلى الصفحة الرئيسية</a>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <header>
+        <h1>سلة المشتريات</h1>
+    </header>
+
+    <div class="container">
+        <h2>المنتجات في السلة:</h2>
+        <ul id="cartItems"></ul>
+        <h3>المجموع: <span id="totalPrice">0</span> ريال</h3>
+
+        <h2>أدخل بياناتك:</h2>
+        <input type="text" id="name" placeholder="الاسم" required>
+        <input type="text" id="phone" placeholder="(بدون رمز الدوله)رقم الجوال" required>
+        <button class="btn" onclick="sendOrder()">إرسال الطلب</button>
+    </div>
+
+    <script src="project.js"></script>
+</body>
+</html>
